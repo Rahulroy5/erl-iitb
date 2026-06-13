@@ -1,0 +1,56 @@
+# ─── Principal Investigator ────────────────────────────────────────────────────
+pi:
+  - name: Prof. Munish Kumar Chandel
+    title: Professor
+    image: munish_chandel.jpg        # place photo in assets/img/
+    email: munish@iitb.ac.in
+    scholar: ""                      # Google Scholar profile ID
+    orcid: ""                        # ORCID ID
+    website: ""
+    bio: >
+      Ph.D. in Environmental Engineering, IIT Delhi (2006). M.Tech., NIT Allahabad.
+      B.Tech., NIT Hamirpur. Young Faculty Award, IIT Bombay (2013). International
+      fellowships from the French Government and Swiss agencies. Research interests:
+      waste management, biogas production, sewage sludge valorization, life cycle
+      assessment, and circular economy.
+
+# ─── PhD Scholars ──────────────────────────────────────────────────────────────
+phd:
+  - name: PhD Scholar 1           # replace with actual name
+    image: placeholder.jpg        # place photo in assets/img/
+    topic: "Anaerobic digestion of organic solid waste for biogas production"
+    year_joined: 2021
+
+  - name: PhD Scholar 2
+    image: placeholder.jpg
+    topic: "Life cycle assessment of sewage sludge treatment pathways"
+    year_joined: 2022
+
+  - name: PhD Scholar 3
+    image: placeholder.jpg
+    topic: "Circular economy metrics for urban solid waste systems"
+    year_joined: 2023
+
+# ─── M.Tech Students ───────────────────────────────────────────────────────────
+mtech:
+  - name: MTech Student 1
+    image: placeholder.jpg
+    topic: "Co-digestion of food waste and sewage sludge"
+    year_joined: 2024
+
+  - name: MTech Student 2
+    image: placeholder.jpg
+    topic: "Environmental assessment of e-waste recycling in India"
+    year_joined: 2024
+
+# ─── Alumni ────────────────────────────────────────────────────────────────────
+alumni:
+  - name: Alumni 1
+    degree: Ph.D.
+    year: 2023
+    current_position: "Postdoctoral Researcher, [Institution]"
+
+  - name: Alumni 2
+    degree: M.Tech.
+    year: 2023
+    current_position: "Engineer, [Organization]"
