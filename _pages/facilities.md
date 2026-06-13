@@ -8,54 +8,39 @@ nav_order: 5
 ---
 
 ERL is equipped with instruments for analytical chemistry, biological process monitoring,
-and environmental sampling. Below is an overview of our key capabilities.
+thermal analysis, and software tools for LCA and experimental design.
 
-> **For external users:** Some instruments are available for collaborative use.
-> Contact [munish@iitb.ac.in](mailto:munish@iitb.ac.in) to discuss access.
-
----
-
-## Analytical Instruments
-
-| Instrument | Specification | Application |
-|---|---|---|
-| Gas Chromatograph (GC) | TCD/FID detector | Biogas composition, VOC analysis |
-| TOC Analyzer | — | Dissolved organic carbon measurement |
-| Atomic Absorption Spectrometer (AAS) | — | Heavy metal analysis in sludge/water |
-| Ion Chromatograph | — | Nutrient (NH₄⁺, NO₃⁻, PO₄³⁻) analysis |
-| BOD/COD measurement setup | — | Wastewater characterization |
-| UV-Vis Spectrophotometer | — | Colorimetric assays |
+> **For collaborative use:** Some instruments are available for external researchers.
+> Contact [munish.chandel@iitb.ac.in](mailto:munish.chandel@iitb.ac.in) to discuss access.
 
 ---
 
-## Biological Process Reactors
+## Laboratory Equipment
 
-- **Bench-scale CSTR digesters** — Temperature-controlled, for anaerobic digestion studies
-- **BMP (Biochemical Methane Potential) apparatus** — Batch assay units for feedstock screening
-- **Sequencing Batch Reactor (SBR)** — Biological wastewater treatment studies
-- **Fermentation vessels** — For aerobic and anaerobic microbial culture work
-
----
-
-## Field & Sampling Equipment
-
-- Portable gas analyzers (CH₄, CO₂, H₂S, O₂)
-- Air quality monitoring equipment (PM, VOC)
-- Wastewater and leachate sampling kits
-- GPS-enabled field data collection tools
+| Instrument | Application |
+|---|---|
+| **Tubular Furnace** | High-temperature experiments: pyrolysis, combustion, thermal treatment of waste materials |
+| **CHN Analyzer** | Elemental analysis (carbon, hydrogen, nitrogen) of solid waste, sludge, and biomass samples |
+| **TKN Analyzer** | Total Kjeldahl nitrogen measurement in wastewater and digestate |
+| **UV Spectrophotometer** | Colorimetric assays, nutrient analysis, and optical measurements |
+| **Gas Analyzer** | Measurement and identification of biogas composition (CH₄, CO₂, H₂S, O₂) |
+| **Respirometer** | Measuring aerobic/anaerobic metabolic rates via oxygen consumption |
 
 ---
 
-## Computing & Modeling
+## Software Tools
 
-- LCA software: **SimaPro** and **OpenLCA**
-- Statistical analysis: MATLAB, R, Python
-- Access to IIT Bombay HPC cluster for large-scale simulations
+| Tool | Use |
+|---|---|
+| **GaBi** | Life cycle assessment (LCA) and environmental impact modelling |
+| **Design Expert** | Statistical design of experiments (DoE), response surface methodology |
+| MATLAB / Python / R | Data analysis, transport emission modelling, process simulation |
 
 ---
 
 ## Location
 
-Room 411, ESED-DESE Building  
-Department of Environmental Science and Engineering  
+Room 411, Environmental Research Laboratory (ERL)  
+ESED-DESE Building  
+Centre for Environmental Science and Engineering  
 IIT Bombay, Powai, Mumbai – 400076

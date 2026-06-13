@@ -21,7 +21,7 @@ nav_order: 3
   </div>
   <div class="col-sm-9">
     <h4 class="mb-1">{{ member.name }}</h4>
-    <p class="text-muted mb-2">{{ member.title }}, Department of Environmental Science and Engineering, IIT Bombay</p>
+    <p class="text-muted mb-2">{{ member.title }}, Centre for Environmental Science and Engineering, IIT Bombay</p>
     <p>{{ member.bio }}</p>
     <div>
       {% if member.email %}
@@ -30,7 +30,7 @@ nav_order: 3
         </a>
       {% endif %}
       {% if member.scholar %}
-        <a href="https://scholar.google.com/citations?user={{ member.scholar }}" target="_blank"
+        <a href="{{ member.scholar }}" target="_blank"
            class="btn btn-sm btn-outline-secondary me-1">
           <i class="ai ai-google-scholar"></i> Scholar
         </a>
@@ -62,8 +62,13 @@ nav_order: 3
              style="width: 100px; height: 100px; object-fit: cover;">
       {% endif %}
       <h6 class="mb-1">{{ member.name }}</h6>
-      <p class="small text-muted mb-1">PhD (joined {{ member.year_joined }})</p>
+      <p class="small text-muted mb-1">Ph.D. Scholar</p>
       <p class="small">{{ member.topic }}</p>
+      {% if member.email and member.email != "" %}
+        <a href="mailto:{{ member.email }}" class="small text-muted">
+          <i class="fas fa-envelope"></i>
+        </a>
+      {% endif %}
     </div>
   </div>
 {% endfor %}
@@ -85,7 +90,7 @@ nav_order: 3
              style="width: 100px; height: 100px; object-fit: cover;">
       {% endif %}
       <h6 class="mb-1">{{ member.name }}</h6>
-      <p class="small text-muted mb-1">M.Tech (joined {{ member.year_joined }})</p>
+      <p class="small text-muted mb-1">M.Tech Student</p>
       <p class="small">{{ member.topic }}</p>
     </div>
   </div>
@@ -96,7 +101,7 @@ nav_order: 3
 
 ## Alumni
 
-| Name | Degree | Year | Current Position |
-|------|--------|------|-----------------|
-{% assign alumni = site.data.members.alumni %}{% for member in alumni %}| {{ member.name }} | {{ member.degree }} | {{ member.year }} | {{ member.current_position }} |
+| Name | Degree | Thesis / Research |
+|------|--------|-------------------|
+{% assign alumni = site.data.members.alumni %}{% for member in alumni %}| {{ member.name }} | {{ member.degree }} ({{ member.year }}) | {{ member.thesis }} |
 {% endfor %}

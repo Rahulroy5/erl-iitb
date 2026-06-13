@@ -1,56 +1,128 @@
-# ─── Principal Investigator ────────────────────────────────────────────────────
 pi:
   - name: Prof. Munish Kumar Chandel
-    title: Professor
-    image: munish_chandel.jpg        # place photo in assets/img/
-    email: munish@iitb.ac.in
-    scholar: ""                      # Google Scholar profile ID
-    orcid: ""                        # ORCID ID
-    website: ""
+    title: Associate Professor
+    image: prof_pic.jpg
+    email: munish.chandel@iitb.ac.in
+    scholar: "https://scholar.google.com/citations?user=na0DARMAAAAJ"
+    orcid: ""
     bio: >
-      Ph.D. in Environmental Engineering, IIT Delhi (2006). M.Tech., NIT Allahabad.
-      B.Tech., NIT Hamirpur. Young Faculty Award, IIT Bombay (2013). International
-      fellowships from the French Government and Swiss agencies. Research interests:
-      waste management, biogas production, sewage sludge valorization, life cycle
-      assessment, and circular economy.
+      Associate Professor, Centre for Environmental Science and Engineering, IIT Bombay.
+      Ph.D., IIT Delhi (2006). M.E., NIT Allahabad (2001). B.Tech., NIT Hamirpur (1999).
+      Young Faculty Award, IIT Bombay (2013). Fellow, International Energy Agency (2007).
+      French Government EGIDE Scholar (2004). Swiss Agency (IDRC) travel grant (2006).
+      Research interests: solid waste management, biogas and anaerobic digestion, wastewater
+      reuse and water-energy nexus, urban transport emissions, carbon capture and storage,
+      and chemical looping combustion.
 
-# ─── PhD Scholars ──────────────────────────────────────────────────────────────
 phd:
-  - name: PhD Scholar 1           # replace with actual name
-    image: placeholder.jpg        # place photo in assets/img/
-    topic: "Anaerobic digestion of organic solid waste for biogas production"
-    year_joined: 2021
-
-  - name: PhD Scholar 2
+  - name: Madhu Kumari
     image: placeholder.jpg
-    topic: "Life cycle assessment of sewage sludge treatment pathways"
-    year_joined: 2022
+    topic: "Anaerobic digestion; Municipal solid waste"
+    email: madhutiwari@iitb.ac.in
 
-  - name: PhD Scholar 3
+  - name: Roshan Mankhair
     image: placeholder.jpg
-    topic: "Circular economy metrics for urban solid waste systems"
-    year_joined: 2023
+    topic: "Landfill mining; Waste valorization"
+    email: roshan.mankhair@iitb.ac.in
 
-# ─── M.Tech Students ───────────────────────────────────────────────────────────
+  - name: Rohit
+    image: placeholder.jpg
+    topic: "Waste to energy; System integration"
+    email: 214180002@iitb.ac.in
+
+  - name: Laukik Yelne
+    image: placeholder.jpg
+    topic: "Urban sustainability assessment"
+    email: laukik.yelne@iitb.ac.in
+
+  - name: Yuvraj Goyal
+    image: placeholder.jpg
+    topic: "Carbon capture and sequestration"
+    email: 22d1268@iitb.ac.in
+
+  - name: Abhishek Johri
+    image: placeholder.jpg
+    topic: "Dry waste management"
+    email: 22d1263@iitb.ac.in
+
+  - name: Adithya Dinesh
+    image: placeholder.jpg
+    topic: "Life cycle assessment of plastic wastes"
+    email: 22d1278@iitb.ac.in
+
+  - name: Samidha Pathak
+    image: placeholder.jpg
+    topic: "Environmental sustainability"
+    email: ""
+
+  - name: Gopal Krishna
+    image: placeholder.jpg
+    topic: "Life cycle assessment of membranes"
+    email: ""
+
 mtech:
-  - name: MTech Student 1
+  - name: Prashant Kumar
     image: placeholder.jpg
-    topic: "Co-digestion of food waste and sewage sludge"
-    year_joined: 2024
+    topic: "To be updated"
+    email: ""
 
-  - name: MTech Student 2
-    image: placeholder.jpg
-    topic: "Environmental assessment of e-waste recycling in India"
-    year_joined: 2024
-
-# ─── Alumni ────────────────────────────────────────────────────────────────────
 alumni:
-  - name: Alumni 1
+  - name: Dr. Ayush Singh
     degree: Ph.D.
-    year: 2023
-    current_position: "Postdoctoral Researcher, [Institution]"
+    thesis: "Landfill mining and legacy waste characterization"
+    year: 2024
 
-  - name: Alumni 2
-    degree: M.Tech.
+  - name: Dr. Rajhans Negi
+    degree: Ph.D.
+    thesis: "Life cycle assessment of wastewater reuse and water-energy nexus"
+    year: 2024
+
+  - name: Dr. Vipin Singh
+    degree: Ph.D.
+    thesis: "Sewage sludge energy recovery and GHG emissions from sewage treatment"
     year: 2023
-    current_position: "Engineer, [Organization]"
+
+  - name: Dr. Bhupendra Sharma
+    degree: Ph.D.
+    thesis: "Municipal solid waste transport emissions"
+    year: 2022
+
+  - name: Dr. Arti Soni
+    degree: Ph.D.
+    thesis: "Urban transport emissions and rainfall impacts, Mumbai Metropolitan Region"
+    year: 2022
+
+  - name: Dr. Arpita Dasgupta
+    degree: Ph.D.
+    thesis: "Enhancement of biogas production from organic fraction of MSW"
+    year: 2021
+
+  - name: Vinutha S R
+    degree: M.Tech.
+    thesis: "Thesis submitted"
+    year: 2024
+
+  - name: Rimjhim Sahu
+    degree: M.Tech.
+    thesis: ""
+    year: 2023
+
+  - name: Dhruv Premani
+    degree: M.Tech.
+    thesis: ""
+    year: 2023
+
+  - name: Devansh Sharma
+    degree: M.Tech.
+    thesis: ""
+    year: 2023
+
+  - name: Shiven Raut
+    degree: M.Tech.
+    thesis: ""
+    year: 2022
+
+  - name: Rishi Rathi
+    degree: M.Tech.
+    thesis: ""
+    year: 2022
