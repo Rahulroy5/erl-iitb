@@ -6,7 +6,7 @@ title: Environmental Research Laboratory
 first_name: ERL
 middle_name:
 last_name: IIT Bombay
-email: munish@iitb.ac.in
+email: munish.chandel@iitb.ac.in
 contact_note: >
   For research inquiries, collaborations, or admissions, email directly.
   For lab visits, please arrange in advance.
@@ -346,6 +346,7 @@ display_categories: ["external-services"] # these categories will be displayed o
 scholar:
   last_name: [Chandel]
   first_name: [Munish, Munish Kumar, M., M.K.]
+  scholar_userid: na0DARMAAAAJ
 
   style: apa
   locale: en
@@ -534,7 +535,7 @@ third_party_libraries:
     version: "5.5.0"
   google_fonts:
     url:
-      fonts: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap"
+      fonts: "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap"
   highlightjs:
     integrity:
       css:
