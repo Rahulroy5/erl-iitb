@@ -69,17 +69,6 @@ combustion**, rooted in our earlier work on low-carbon energy systems.
   </div>
 </div>
 
-<script>
-(function() {
-  function activate() {
-    var observer = new IntersectionObserver(function(entries) {
-      entries.forEach(function(e) { if (e.isIntersecting) { e.target.classList.add('revealed'); observer.unobserve(e.target); } });
-    }, { threshold: 0.08 });
-    document.querySelectorAll('.reveal').forEach(function(el) { observer.observe(el); });
-  }
-  if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', activate); } else { activate(); }
-})();
-</script>
 
 ---
 
