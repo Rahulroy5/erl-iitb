@@ -49,25 +49,37 @@ combustion**, rooted in our earlier work on low-carbon energy systems.
 ## Research Areas
 
 <div class="row mt-3">
-  <div class="col-sm-4 mb-3">
+  <div class="col-sm-4 mb-3 reveal">
     <div class="card h-100 p-3">
       <h5>♻️ Solid Waste & LCA</h5>
       <p class="small text-muted">Life cycle assessment and costing of MSW management strategies, landfill mining, and waste-to-energy technologies for Indian cities.</p>
     </div>
   </div>
-  <div class="col-sm-4 mb-3">
+  <div class="col-sm-4 mb-3 reveal">
     <div class="card h-100 p-3">
       <h5>🌿 Biogas & Organic Waste</h5>
       <p class="small text-muted">Anaerobic digestion and co-digestion of OFMSW and sewage sludge, pretreatment methods, and decentralised biogas systems.</p>
     </div>
   </div>
-  <div class="col-sm-4 mb-3">
+  <div class="col-sm-4 mb-3 reveal">
     <div class="card h-100 p-3">
       <h5>🚗 Transport & Urban Emissions</h5>
       <p class="small text-muted">GHG emissions from urban road transport, congestion and rainfall impacts, and mitigation policy analysis for Indian megacities.</p>
     </div>
   </div>
 </div>
+
+<script>
+(function() {
+  function activate() {
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) { if (e.isIntersecting) { e.target.classList.add('revealed'); observer.unobserve(e.target); } });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.reveal').forEach(function(el) { observer.observe(el); });
+  }
+  if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', activate); } else { activate(); }
+})();
+</script>
 
 ---
 

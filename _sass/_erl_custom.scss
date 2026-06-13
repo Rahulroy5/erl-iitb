@@ -1,0 +1,563 @@
+/*
+ * ERL IIT Bombay — custom styles layered on top of al-folio
+ * Loaded last from assets/css/main.scss so they win all specificity fights.
+ */
+
+// ── Google Font: Inter ───────────────────────────────────────────────────────
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap');
+
+// ── Base Typography ───────────────────────────────────────────────────────────
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  letter-spacing: -0.01em;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lora', Georgia, serif;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--global-text-color);
+}
+
+// ── Navbar ────────────────────────────────────────────────────────────────────
+.navbar {
+  background-color: rgba(255, 255, 255, 0.97) !important;
+  backdrop-filter: saturate(180%) blur(12px);
+  border-bottom: 1px solid rgba(13, 115, 119, 0.12) !important;
+  padding: 0.75rem 1rem;
+
+  .navbar-brand {
+    font-family: 'Lora', Georgia, serif;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: #0D7377 !important;
+    letter-spacing: -0.01em;
+  }
+
+  .nav-link {
+    font-size: 0.82rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #444 !important;
+    padding: 0.35rem 0.6rem !important;
+    border-radius: 6px;
+    transition: background-color 0.15s ease, color 0.15s ease;
+
+    &:hover {
+      background-color: rgba(13, 115, 119, 0.08);
+      color: #0D7377 !important;
+    }
+
+    &.active {
+      color: #0D7377 !important;
+      background-color: rgba(13, 115, 119, 0.1);
+      font-weight: 600;
+    }
+  }
+}
+
+html[data-theme="dark"] .navbar {
+  background-color: rgba(28, 28, 29, 0.97) !important;
+  border-bottom: 1px solid rgba(20, 184, 166, 0.15) !important;
+
+  .navbar-brand { color: #14b8a6 !important; }
+
+  .nav-link {
+    color: #ccc !important;
+    &:hover  { background-color: rgba(20,184,166,0.1); color: #14b8a6 !important; }
+    &.active { background-color: rgba(20,184,166,0.12); color: #14b8a6 !important; }
+  }
+}
+
+// ── About / Hero page ─────────────────────────────────────────────────────────
+.post-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #0D7377;
+  margin-bottom: 0.25rem;
+}
+
+.post-description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.profile .more-info {
+  background: linear-gradient(135deg, #f0fafa 0%, #e6f7f7 100%);
+  border-left: 3px solid #0D7377;
+  border-radius: 0 8px 8px 0;
+  padding: 1rem 1.2rem;
+  font-size: 0.88rem;
+  line-height: 1.8;
+
+  p { margin-bottom: 0.25rem; }
+  a { color: #0D7377; font-weight: 500; }
+}
+
+html[data-theme="dark"] .profile .more-info {
+  background: linear-gradient(135deg, rgba(13,115,119,0.15) 0%, rgba(13,115,119,0.08) 100%);
+  border-left-color: #14b8a6;
+}
+
+// ── Cards ─────────────────────────────────────────────────────────────────────
+.card {
+  border: 1px solid rgba(13, 115, 119, 0.1) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06), 0 2px 8px rgba(0,0,0,0.04) !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease !important;
+  overflow: hidden;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(13,115,119,0.14), 0 2px 8px rgba(0,0,0,0.06) !important;
+    border-color: rgba(13,115,119,0.25) !important;
+  }
+
+  h5 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #0D7377;
+  }
+}
+
+html[data-theme="dark"] .card {
+  border-color: rgba(20,184,166,0.12) !important;
+  &:hover { border-color: rgba(20,184,166,0.3) !important; }
+  h5 { color: #14b8a6; }
+}
+
+// ── Section headings (h2) ─────────────────────────────────────────────────────
+.post-content h2,
+.page-content h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #0D7377;
+  border-bottom: 2px solid rgba(13,115,119,0.2);
+  padding-bottom: 0.4rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+html[data-theme="dark"] {
+  .post-content h2,
+  .page-content h2 {
+    color: #14b8a6;
+    border-bottom-color: rgba(20,184,166,0.2);
+  }
+}
+
+// ── Research page key-themes bold ─────────────────────────────────────────────
+.post-content strong {
+  color: #0D7377;
+  font-weight: 600;
+}
+
+html[data-theme="dark"] .post-content strong { color: #14b8a6; }
+
+// ── Publications ──────────────────────────────────────────────────────────────
+.publications {
+  h2.year {
+    color: #0D7377;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    border-bottom: 2px solid rgba(13,115,119,0.2);
+    padding-bottom: 0.3rem;
+  }
+
+  .abbr abbr {
+    background-color: #0D7377 !important;
+    color: #fff !important;
+    border-radius: 5px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    padding: 2px 7px;
+    text-decoration: none;
+  }
+
+  .title { font-weight: 600; font-size: 0.97rem; }
+  
+  a.author-name {
+    font-weight: 600;
+    color: #0D7377;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-underline-offset: 3px;
+  }
+
+  .periodical { 
+    font-style: italic; 
+    color: var(--global-text-color-light);
+    font-size: 0.9rem;
+  }
+}
+
+html[data-theme="dark"] .publications {
+  h2.year { color: #14b8a6; border-bottom-color: rgba(20,184,166,0.2); }
+  .abbr abbr { background-color: #0f766e !important; }
+  a.author-name { color: #14b8a6; }
+}
+
+// ── People page ───────────────────────────────────────────────────────────────
+.profile img {
+  border: 3px solid rgba(13,115,119,0.2);
+  box-shadow: 0 4px 16px rgba(13,115,119,0.12);
+}
+
+.member-card {
+  text-align: center;
+  padding: 1.5rem 1rem;
+
+  img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid rgba(13,115,119,0.2);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    margin-bottom: 0.75rem;
+  }
+
+  h6 { font-weight: 600; font-size: 0.95rem; color: #0D7377; margin-bottom: 0.1rem; }
+  .member-role { font-size: 0.78rem; color: #888; font-weight: 500; }
+  .member-topic { font-size: 0.82rem; color: var(--global-text-color-light); margin-top: 0.3rem; }
+}
+
+// ── Buttons / links ───────────────────────────────────────────────────────────
+.btn-sm.btn-outline-secondary {
+  border-color: #0D7377 !important;
+  color: #0D7377 !important;
+  font-size: 0.78rem;
+  font-weight: 500;
+  border-radius: 6px;
+  padding: 3px 10px;
+
+  &:hover {
+    background-color: #0D7377 !important;
+    color: #fff !important;
+  }
+}
+
+// ── Footer ────────────────────────────────────────────────────────────────────
+footer.fixed-bottom,
+footer.sticky-bottom,
+.site-footer {
+  background-color: #063233 !important;
+  color: #a5d6d7 !important;
+  font-size: 0.82rem;
+  padding: 0.6rem 0;
+
+  a { color: #d1eaea !important; text-decoration: none; }
+  a:hover { color: #fff !important; }
+}
+
+html[data-theme="dark"] footer {
+  background-color: #041f1f !important;
+}
+
+// ── News / Announcements ──────────────────────────────────────────────────────
+.news {
+  li {
+    border-left: 3px solid rgba(13,115,119,0.25);
+    padding-left: 0.8rem;
+    margin-bottom: 0.5rem;
+
+    &:hover { border-left-color: #0D7377; }
+  }
+
+  .news-date {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #0D7377;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+}
+
+// ── Table improvements ────────────────────────────────────────────────────────
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+
+  thead th {
+    background-color: #0D7377;
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding: 0.65rem 1rem;
+    border: none;
+  }
+
+  tbody tr {
+    &:nth-child(even) { background-color: rgba(13,115,119,0.03); }
+    &:hover { background-color: rgba(13,115,119,0.07); }
+
+    td {
+      padding: 0.6rem 1rem;
+      font-size: 0.9rem;
+      border-top: 1px solid rgba(13,115,119,0.08) !important;
+    }
+  }
+}
+
+// ── Horizontal rules ─────────────────────────────────────────────────────────
+hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, #0D7377, rgba(13,115,119,0.1), transparent);
+  margin: 2rem 0;
+}
+
+// ── Page titles ───────────────────────────────────────────────────────────────
+h1.post-title,
+h1.page-title {
+  font-size: 2.2rem;
+  color: #0D7377;
+  font-weight: 700;
+}
+
+// ── Social icons on about page ────────────────────────────────────────────────
+.social .contact-icons a {
+  color: #0D7377 !important;
+  &:hover { color: #0a5c5f !important; }
+}
+
+html[data-theme="dark"] .social .contact-icons a {
+  color: #14b8a6 !important;
+}
+
+// ── Scrollbar (webkit) ────────────────────────────────────────────────────────
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background-color: rgba(13,115,119,0.35); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background-color: #0D7377; }
+
+// ── Scroll-reveal animation ───────────────────────────────────────────────────
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+
+  &.revealed {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// stagger siblings inside a row
+.row > .reveal:nth-child(2) { transition-delay: 0.1s; }
+.row > .reveal:nth-child(3) { transition-delay: 0.2s; }
+.row > .reveal:nth-child(4) { transition-delay: 0.3s; }
+
+// ── Lab hero banner ───────────────────────────────────────────────────────────
+.lab-hero {
+  position: relative;
+  width: 100%;
+  height: 340px;
+  background-size: cover;
+  background-position: center 40%;
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg,
+      rgba(6, 50, 51, 0.72) 0%,
+      rgba(13, 115, 119, 0.45) 60%,
+      rgba(0,0,0,0.25) 100%);
+  }
+
+  .lab-hero-content {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 2rem 2.5rem;
+    color: #fff;
+
+    h1 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: #fff;
+      margin: 0 0 0.4rem;
+      text-shadow: 0 2px 12px rgba(0,0,0,0.3);
+      letter-spacing: -0.02em;
+    }
+
+    p {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.82);
+      margin: 0;
+      font-weight: 400;
+    }
+  }
+}
+
+// ── Equipment cards ───────────────────────────────────────────────────────────
+.equipment-card {
+  border-radius: 14px !important;
+  overflow: hidden;
+  border: 1px solid rgba(13,115,119,0.1) !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06) !important;
+  transition: transform 0.3s cubic-bezier(0.16,1,0.3,1),
+              box-shadow 0.3s ease,
+              border-color 0.3s ease !important;
+  background: #fff;
+
+  &:hover {
+    transform: translateY(-6px) !important;
+    box-shadow: 0 16px 40px rgba(13,115,119,0.16), 0 4px 12px rgba(0,0,0,0.07) !important;
+    border-color: rgba(13,115,119,0.35) !important;
+
+    .equipment-img-wrap img {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.equipment-img-wrap {
+  height: 200px;
+  overflow: hidden;
+  background: #f5f9f9;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s cubic-bezier(0.16,1,0.3,1);
+  }
+
+  .equipment-img-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #e0f2f2, #f0fafa);
+    font-size: 2.5rem;
+    color: #0D7377;
+    opacity: 0.5;
+  }
+}
+
+.equipment-card-body {
+  padding: 1.2rem 1.25rem 1.4rem;
+
+  .equipment-name {
+    font-family: 'Lora', Georgia, serif;
+    font-size: 1.02rem;
+    font-weight: 600;
+    color: #0D7377;
+    margin: 0 0 0.35rem;
+  }
+
+  .equipment-desc {
+    font-size: 0.84rem;
+    color: #666;
+    line-height: 1.5;
+    margin: 0;
+  }
+}
+
+html[data-theme="dark"] .equipment-card {
+  background: #1e2a2a;
+  border-color: rgba(20,184,166,0.12) !important;
+  &:hover { border-color: rgba(20,184,166,0.35) !important; }
+  .equipment-card-body .equipment-name { color: #14b8a6; }
+  .equipment-card-body .equipment-desc { color: #999; }
+  .equipment-img-wrap { background: #162222; }
+  .equipment-img-placeholder { background: linear-gradient(135deg, #162222, #1e2a2a); color: #14b8a6; }
+}
+
+// ── Software tool chips ───────────────────────────────────────────────────────
+.software-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.1rem 1.4rem;
+  border-radius: 12px;
+  border: 1px solid rgba(13,115,119,0.12);
+  background: linear-gradient(135deg, #f8fefd 0%, #f0fafa 100%);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  margin-bottom: 0.75rem;
+
+  &:hover {
+    transform: translateX(4px);
+    box-shadow: 0 4px 16px rgba(13,115,119,0.12);
+  }
+
+  .software-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #0D7377, #14b8a6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+  }
+
+  .software-info {
+    strong { display: block; font-size: 0.9rem; font-weight: 600; color: #0D7377; }
+    span   { font-size: 0.82rem; color: #666; }
+  }
+}
+
+html[data-theme="dark"] .software-card {
+  background: linear-gradient(135deg, #162222 0%, #1a2828 100%);
+  border-color: rgba(20,184,166,0.12);
+  .software-info { strong { color: #14b8a6; } span { color: #888; } }
+}
+
+// ── Page-load fade-in ─────────────────────────────────────────────────────────
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.post, .page-content {
+  animation: fadeIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+// ── Link underline animation ──────────────────────────────────────────────────
+.post-content a:not(.btn):not(.badge) {
+  text-decoration: none;
+  background-image: linear-gradient(#0D7377, #0D7377);
+  background-size: 0% 1.5px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transition: background-size 0.25s ease;
+  color: #0D7377;
+
+  &:hover {
+    background-size: 100% 1.5px;
+  }
+}
+
+html[data-theme="dark"] .post-content a:not(.btn):not(.badge) {
+  color: #14b8a6;
+  background-image: linear-gradient(#14b8a6, #14b8a6);
+}
